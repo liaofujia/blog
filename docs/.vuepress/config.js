@@ -1,6 +1,6 @@
 module.exports = {
     title: "冲破束缚的天蝎座",
-    head: [["link", { rel: "icon", href: "logo.png" }]],
+    head: [["link", { rel: "icon", href: "web.png" }]],
     description: "一名专注前端开发的废物",
     base: "/blog/",
     themeConfig: {
@@ -10,7 +10,7 @@ module.exports = {
       repoLabel: "Github",
       nav: [
         {
-          text: "前端面试之道",
+          text: "前端八股文",
           link: "/interview/",
         },
         {
@@ -24,7 +24,7 @@ module.exports = {
           link: "/react/",
         },
         {
-          text: "typeScript",
+          text: "typescript",
           link: "/typescript/",
         },
         {
@@ -49,7 +49,7 @@ module.exports = {
         "/books/": ["", "FactoryPattern"],
         "/react/": ["", "hooks", "advance"],
         "/typescript/": [
-          "",
+          "note/",
           "base",
           "advance",
           "challengeBuildIn",
