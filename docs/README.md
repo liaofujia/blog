@@ -1,11 +1,11 @@
 home: true
 lang: zh-CN
-heroText: A  Personal Blog
+heroText: A Personal Blog
 heroImage: /logo.jpg
-actionText: 开始 →
+actionText: GO →
 actionLink: /interview/
 features:
-- title: A Blog
+- title: 前端知识
   details: 专注写作前端博客，记录日常所得。
 - title: For Me
   details: 滴水穿石，非一日功。
