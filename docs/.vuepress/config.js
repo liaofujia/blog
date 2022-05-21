@@ -49,7 +49,7 @@ module.exports = {
         "/books/": ["", "FactoryPattern"],
         "/react/": ["", "hooks", "advance"],
         "/typescript/": [
-          "note/",
+          "",
           "base",
           "advance",
           "challengeBuildIn",
