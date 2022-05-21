@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>tsconfig.json介绍 | 冲破束缚的天蝎座</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="web.png">
+    <meta name="description" content="一名专注前端开发的废物">
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.e92431cb.css" as="style"><link rel="preload" href="/blog/assets/js/app.3faf3b5a.js" as="script"><link rel="preload" href="/blog/assets/js/2.f21ef004.js" as="script"><link rel="preload" href="/blog/assets/js/46.9bfcf467.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.6c00c5ec.js"><link rel="prefetch" href="/blog/assets/js/11.46339c4b.js"><link rel="prefetch" href="/blog/assets/js/12.41d24a22.js"><link rel="prefetch" href="/blog/assets/js/13.c887e290.js"><link rel="prefetch" href="/blog/assets/js/14.a721a174.js"><link rel="prefetch" href="/blog/assets/js/15.0e792442.js"><link rel="prefetch" href="/blog/assets/js/16.e6f103b8.js"><link rel="prefetch" href="/blog/assets/js/17.32a8ae99.js"><link rel="prefetch" href="/blog/assets/js/18.bc6047c5.js"><link rel="prefetch" href="/blog/assets/js/19.bd558192.js"><link rel="prefetch" href="/blog/assets/js/20.30fcf379.js"><link rel="prefetch" href="/blog/assets/js/21.57070a5c.js"><link rel="prefetch" href="/blog/assets/js/22.d1c6053d.js"><link rel="prefetch" href="/blog/assets/js/23.7f8ffe88.js"><link rel="prefetch" href="/blog/assets/js/24.bfef35ca.js"><link rel="prefetch" href="/blog/assets/js/25.4aaafe0f.js"><link rel="prefetch" href="/blog/assets/js/26.5eefef23.js"><link rel="prefetch" href="/blog/assets/js/27.780fe627.js"><link rel="prefetch" href="/blog/assets/js/28.568829f3.js"><link rel="prefetch" href="/blog/assets/js/29.d3b22c8c.js"><link rel="prefetch" href="/blog/assets/js/3.eecce71b.js"><link rel="prefetch" href="/blog/assets/js/30.3a6e50ec.js"><link rel="prefetch" href="/blog/assets/js/31.50133f3c.js"><link rel="prefetch" href="/blog/assets/js/32.f89fd996.js"><link rel="prefetch" href="/blog/assets/js/33.de2fe35b.js"><link rel="prefetch" href="/blog/assets/js/34.254ed816.js"><link rel="prefetch" href="/blog/assets/js/35.a881d1bd.js"><link rel="prefetch" href="/blog/assets/js/36.8414a4c4.js"><link rel="prefetch" href="/blog/assets/js/37.d8d2776d.js"><link rel="prefetch" href="/blog/assets/js/38.6b34add3.js"><link rel="prefetch" href="/blog/assets/js/39.bbd624b6.js"><link rel="prefetch" href="/blog/assets/js/4.228b9cee.js"><link rel="prefetch" href="/blog/assets/js/40.4c5f272f.js"><link rel="prefetch" href="/blog/assets/js/41.76207b1d.js"><link rel="prefetch" href="/blog/assets/js/42.02fd675c.js"><link rel="prefetch" href="/blog/assets/js/43.d48b41ae.js"><link rel="prefetch" href="/blog/assets/js/44.be0279d9.js"><link rel="prefetch" href="/blog/assets/js/45.39ce449d.js"><link rel="prefetch" href="/blog/assets/js/5.9d94d376.js"><link rel="prefetch" href="/blog/assets/js/6.c6045601.js"><link rel="prefetch" href="/blog/assets/js/7.8e3dff59.js"><link rel="prefetch" href="/blog/assets/js/8.bc56b455.js"><link rel="prefetch" href="/blog/assets/js/9.9654334a.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.e92431cb.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><!----> <span class="site-name">冲破束缚的天蝎座</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/interview/" class="nav-link">
+  前端八股文
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端书籍" class="dropdown-title"><span class="title">前端书籍</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端书籍" class="mobile-dropdown-title"><span class="title">前端书籍</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/books/" class="nav-link">
+  JavaScript设计模式
+</a></li></ul></div></div><div class="nav-item"><a href="/blog/react/" class="nav-link">
+  react
+</a></div><div class="nav-item"><a href="/blog/typescript/" class="nav-link router-link-active">
+  typescript
+</a></div><div class="nav-item"><a href="/blog/advance/prettier.html" class="nav-link">
+  前端进阶
+</a></div><div class="nav-item"><a href="/blog/automate/" class="nav-link">
+  前端自动化部署
+</a></div><div class="nav-item"><a href="/blog/git/" class="nav-link">
+  Git
+</a></div><div class="nav-item"><a href="/blog/other/css.html" class="nav-link">
+  常见问题
+</a></div> <a href="https://github.com/liaofujia/blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/interview/" class="nav-link">
+  前端八股文
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端书籍" class="dropdown-title"><span class="title">前端书籍</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端书籍" class="mobile-dropdown-title"><span class="title">前端书籍</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/books/" class="nav-link">
+  JavaScript设计模式
+</a></li></ul></div></div><div class="nav-item"><a href="/blog/react/" class="nav-link">
+  react
+</a></div><div class="nav-item"><a href="/blog/typescript/" class="nav-link router-link-active">
+  typescript
+</a></div><div class="nav-item"><a href="/blog/advance/prettier.html" class="nav-link">
+  前端进阶
+</a></div><div class="nav-item"><a href="/blog/automate/" class="nav-link">
+  前端自动化部署
+</a></div><div class="nav-item"><a href="/blog/git/" class="nav-link">
+  Git
+</a></div><div class="nav-item"><a href="/blog/other/css.html" class="nav-link">
+  常见问题
+</a></div> <a href="https://github.com/liaofujia/blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><a href="/blog/typescript/" aria-current="page" class="sidebar-link">TypeScript介绍</a></li><li><a href="/blog/typescript/base.html" class="sidebar-link">TypeScript基础</a></li><li><a href="/blog/typescript/advance.html" class="sidebar-link">TypeScript进阶</a></li><li><a href="/blog/typescript/challengeBuildIn.html" class="sidebar-link">TypeScript内置工具类型</a></li><li><a href="/blog/typescript/challenge.html" class="sidebar-link">TypeScript自定义工具类型</a></li><li><a href="/blog/typescript/tsconfig.html" aria-current="page" class="active sidebar-link">tsconfig.json介绍</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/typescript/tsconfig.html#tsconfig-json-重要字段" class="sidebar-link">tsconfig.json 重要字段</a></li><li class="sidebar-sub-header"><a href="/blog/typescript/tsconfig.html#compileroptions-选项" class="sidebar-link">compilerOptions 选项</a></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="tsconfig-json介绍"><a href="#tsconfig-json介绍" class="header-anchor">#</a> tsconfig.json介绍</h1> <p>tsconfig.json 是 TypeScript 项目的配置文件。如果一个目录下存在一个 tsconfig.json 文件，那么往往意味着这个目录就是 TypeScript 项目的根目录。</p> <p>tsconfig.json 包含 TypeScript 编译的相关配置，通过更改编译配置项，我们可以让 TypeScript 编译出 ES6、ES5、node 的代码。</p> <h2 id="tsconfig-json-重要字段"><a href="#tsconfig-json-重要字段" class="header-anchor">#</a> tsconfig.json 重要字段</h2> <ul><li>files - 设置要编译的文件的名称；</li> <li>include - 设置需要进行编译的文件，支持路径模式匹配；</li> <li>exclude - 设置无需进行编译的文件，支持路径模式匹配；</li> <li>compilerOptions - 设置与编译流程相关的选项。</li></ul> <h2 id="compileroptions-选项"><a href="#compileroptions-选项" class="header-anchor">#</a> compilerOptions 选项</h2> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;compilerOptions&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token comment">/* 基本选项 */</span>
+    <span class="token property">&quot;target&quot;</span><span class="token operator">:</span> <span class="token string">&quot;es5&quot;</span><span class="token punctuation">,</span>                       <span class="token comment">// 指定 ECMAScript 目标版本: 'ES3' (default), 'ES5', 'ES6'/'ES2015', 'ES2016', 'ES2017', or 'ESNEXT'</span>
+    <span class="token property">&quot;module&quot;</span><span class="token operator">:</span> <span class="token string">&quot;commonjs&quot;</span><span class="token punctuation">,</span>                  <span class="token comment">// 指定使用模块: 'commonjs', 'amd', 'system', 'umd' or 'es2015'</span>
+    <span class="token property">&quot;lib&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>                             <span class="token comment">// 指定要包含在编译中的库文件</span>
+    <span class="token property">&quot;allowJs&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>                       <span class="token comment">// 允许编译 javascript 文件</span>
+    <span class="token property">&quot;checkJs&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>                       <span class="token comment">// 报告 javascript 文件中的错误</span>
+    <span class="token property">&quot;jsx&quot;</span><span class="token operator">:</span> <span class="token string">&quot;preserve&quot;</span><span class="token punctuation">,</span>                     <span class="token comment">// 指定 jsx 代码的生成: 'preserve', 'react-native', or 'react'</span>
+    <span class="token property">&quot;declaration&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>                   <span class="token comment">// 生成相应的 '.d.ts' 文件</span>
+    <span class="token property">&quot;sourceMap&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>                     <span class="token comment">// 生成相应的 '.map' 文件</span>
+    <span class="token property">&quot;outFile&quot;</span><span class="token operator">:</span> <span class="token string">&quot;./&quot;</span><span class="token punctuation">,</span>                       <span class="token comment">// 将输出文件合并为一个文件</span>
+    <span class="token property">&quot;outDir&quot;</span><span class="token operator">:</span> <span class="token string">&quot;./&quot;</span><span class="token punctuation">,</span>                        <span class="token comment">// 指定输出目录</span>
+    <span class="token property">&quot;rootDir&quot;</span><span class="token operator">:</span> <span class="token string">&quot;./&quot;</span><span class="token punctuation">,</span>                       <span class="token comment">// 用来控制输出目录结构 --outDir.</span>
+    <span class="token property">&quot;removeComments&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>                <span class="token comment">// 删除编译后的所有的注释</span>
+    <span class="token property">&quot;noEmit&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>                        <span class="token comment">// 不生成输出文件</span>
+    <span class="token property">&quot;importHelpers&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>                 <span class="token comment">// 从 tslib 导入辅助工具函数</span>
+    <span class="token property">&quot;isolatedModules&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>               <span class="token comment">// 将每个文件做为单独的模块 （与 'ts.transpileModule' 类似）.</span>
+
+    <span class="token comment">/* 严格的类型检查选项 */</span>
+    <span class="token property">&quot;strict&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>                        <span class="token comment">// 启用所有严格类型检查选项</span>
+    <span class="token property">&quot;noImplicitAny&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>                 <span class="token comment">// 在表达式和声明上有隐含的 any类型时报错</span>
+    <span class="token property">&quot;strictNullChecks&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>              <span class="token comment">// 启用严格的 null 检查</span>
+    <span class="token property">&quot;noImplicitThis&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>                <span class="token comment">// 当 this 表达式值为 any 类型的时候，生成一个错误</span>
+    <span class="token property">&quot;alwaysStrict&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>                  <span class="token comment">// 以严格模式检查每个模块，并在每个文件里加入 'use strict'</span>
+
+    <span class="token comment">/* 额外的检查 */</span>
+    <span class="token property">&quot;noUnusedLocals&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>                <span class="token comment">// 有未使用的变量时，抛出错误</span>
+    <span class="token property">&quot;noUnusedParameters&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>            <span class="token comment">// 有未使用的参数时，抛出错误</span>
+    <span class="token property">&quot;noImplicitReturns&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>             <span class="token comment">// 并不是所有函数里的代码都有返回值时，抛出错误</span>
+    <span class="token property">&quot;noFallthroughCasesInSwitch&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>    <span class="token comment">// 报告 switch 语句的 fallthrough 错误。（即，不允许 switch 的 case 语句贯穿）</span>
+
+    <span class="token comment">/* 模块解析选项 */</span>
+    <span class="token property">&quot;moduleResolution&quot;</span><span class="token operator">:</span> <span class="token string">&quot;node&quot;</span><span class="token punctuation">,</span>            <span class="token comment">// 选择模块解析策略： 'node' (Node.js) or 'classic' (TypeScript pre-1.6)</span>
+    <span class="token property">&quot;baseUrl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;./&quot;</span><span class="token punctuation">,</span>                       <span class="token comment">// 用于解析非相对模块名称的基目录</span>
+    <span class="token property">&quot;paths&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>                           <span class="token comment">// 模块名到基于 baseUrl 的路径映射的列表</span>
+    <span class="token property">&quot;rootDirs&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>                        <span class="token comment">// 根文件夹列表，其组合内容表示项目运行时的结构内容</span>
+    <span class="token property">&quot;typeRoots&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>                       <span class="token comment">// 包含类型声明的文件列表</span>
+    <span class="token property">&quot;types&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>                           <span class="token comment">// 需要包含的类型声明文件名列表</span>
+    <span class="token property">&quot;allowSyntheticDefaultImports&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>  <span class="token comment">// 允许从没有设置默认导出的模块中默认导入。</span>
+
+    <span class="token comment">/* Source Map Options */</span>
+    <span class="token property">&quot;sourceRoot&quot;</span><span class="token operator">:</span> <span class="token string">&quot;./&quot;</span><span class="token punctuation">,</span>                    <span class="token comment">// 指定调试器应该找到 TypeScript 文件而不是源文件的位置</span>
+    <span class="token property">&quot;mapRoot&quot;</span><span class="token operator">:</span> <span class="token string">&quot;./&quot;</span><span class="token punctuation">,</span>                       <span class="token comment">// 指定调试器应该找到映射文件而不是生成文件的位置</span>
+    <span class="token property">&quot;inlineSourceMap&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>               <span class="token comment">// 生成单个 soucemaps 文件，而不是将 sourcemaps 生成不同的文件</span>
+    <span class="token property">&quot;inlineSources&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>                 <span class="token comment">// 将代码与 sourcemaps 生成到一个文件中，要求同时设置了 --inlineSourceMap 或 --sourceMap 属性</span>
+
+    <span class="token comment">/* 其他选项 */</span>
+    <span class="token property">&quot;experimentalDecorators&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>        <span class="token comment">// 启用装饰器</span>
+    <span class="token property">&quot;emitDecoratorMetadata&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>          <span class="token comment">// 为装饰器提供元数据的支持</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>typeRoots: 用来指定默认的类型声明文件查找路径，默认为node_modules/@types, 指定typeRoots后，TypeScript 编译器会从指定的路径去引入声明文件，而不是node_modules/@types, 比如以下配置会从typings路径下去搜索声明</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;compilerOptions&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;typeRoots&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;./typings&quot;</span><span class="token punctuation">]</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong>总结</strong></p> <ul><li>typeRoots 是 tsconfig 中 compilerOptions 的一个配置项，typeRoots 下面的包会被 ts 编译器自动包含进来，typeRoots 默认指向 node_modules/@types。</li> <li>@types 是 scoped packages，和@babel 类似。@types 下的所有包会默认被引入，你可以通过修改 compilerOptions 来修改默认策略。</li> <li>types 和 typeRoots 一样也是 compilerOptions 的配置，指定 types 后，typeRoots 下只有被指定的包才会被引入。</li></ul></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最后更新时间:</span> <span class="time">5/21/2022, 4:34:14 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/typescript/challenge.html" class="prev">
+        TypeScript自定义工具类型
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/blog/assets/js/app.3faf3b5a.js" defer></script><script src="/blog/assets/js/2.f21ef004.js" defer></script><script src="/blog/assets/js/46.9bfcf467.js" defer></script>
+  </body>
+</html>

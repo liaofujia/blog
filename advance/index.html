@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ESLint配置 | 冲破束缚的天蝎座</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="web.png">
+    <meta name="description" content="一名专注前端开发的废物">
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.e92431cb.css" as="style"><link rel="preload" href="/blog/assets/js/app.3faf3b5a.js" as="script"><link rel="preload" href="/blog/assets/js/2.f21ef004.js" as="script"><link rel="preload" href="/blog/assets/js/8.bc56b455.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.6c00c5ec.js"><link rel="prefetch" href="/blog/assets/js/11.46339c4b.js"><link rel="prefetch" href="/blog/assets/js/12.41d24a22.js"><link rel="prefetch" href="/blog/assets/js/13.c887e290.js"><link rel="prefetch" href="/blog/assets/js/14.a721a174.js"><link rel="prefetch" href="/blog/assets/js/15.0e792442.js"><link rel="prefetch" href="/blog/assets/js/16.e6f103b8.js"><link rel="prefetch" href="/blog/assets/js/17.32a8ae99.js"><link rel="prefetch" href="/blog/assets/js/18.bc6047c5.js"><link rel="prefetch" href="/blog/assets/js/19.bd558192.js"><link rel="prefetch" href="/blog/assets/js/20.30fcf379.js"><link rel="prefetch" href="/blog/assets/js/21.57070a5c.js"><link rel="prefetch" href="/blog/assets/js/22.d1c6053d.js"><link rel="prefetch" href="/blog/assets/js/23.7f8ffe88.js"><link rel="prefetch" href="/blog/assets/js/24.bfef35ca.js"><link rel="prefetch" href="/blog/assets/js/25.4aaafe0f.js"><link rel="prefetch" href="/blog/assets/js/26.5eefef23.js"><link rel="prefetch" href="/blog/assets/js/27.780fe627.js"><link rel="prefetch" href="/blog/assets/js/28.568829f3.js"><link rel="prefetch" href="/blog/assets/js/29.d3b22c8c.js"><link rel="prefetch" href="/blog/assets/js/3.eecce71b.js"><link rel="prefetch" href="/blog/assets/js/30.3a6e50ec.js"><link rel="prefetch" href="/blog/assets/js/31.50133f3c.js"><link rel="prefetch" href="/blog/assets/js/32.f89fd996.js"><link rel="prefetch" href="/blog/assets/js/33.de2fe35b.js"><link rel="prefetch" href="/blog/assets/js/34.254ed816.js"><link rel="prefetch" href="/blog/assets/js/35.a881d1bd.js"><link rel="prefetch" href="/blog/assets/js/36.8414a4c4.js"><link rel="prefetch" href="/blog/assets/js/37.d8d2776d.js"><link rel="prefetch" href="/blog/assets/js/38.6b34add3.js"><link rel="prefetch" href="/blog/assets/js/39.bbd624b6.js"><link rel="prefetch" href="/blog/assets/js/4.228b9cee.js"><link rel="prefetch" href="/blog/assets/js/40.4c5f272f.js"><link rel="prefetch" href="/blog/assets/js/41.76207b1d.js"><link rel="prefetch" href="/blog/assets/js/42.02fd675c.js"><link rel="prefetch" href="/blog/assets/js/43.d48b41ae.js"><link rel="prefetch" href="/blog/assets/js/44.be0279d9.js"><link rel="prefetch" href="/blog/assets/js/45.39ce449d.js"><link rel="prefetch" href="/blog/assets/js/46.9bfcf467.js"><link rel="prefetch" href="/blog/assets/js/5.9d94d376.js"><link rel="prefetch" href="/blog/assets/js/6.c6045601.js"><link rel="prefetch" href="/blog/assets/js/7.8e3dff59.js"><link rel="prefetch" href="/blog/assets/js/9.9654334a.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.e92431cb.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><!----> <span class="site-name">冲破束缚的天蝎座</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/interview/" class="nav-link">
+  前端八股文
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端书籍" class="dropdown-title"><span class="title">前端书籍</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端书籍" class="mobile-dropdown-title"><span class="title">前端书籍</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/books/" class="nav-link">
+  JavaScript设计模式
+</a></li></ul></div></div><div class="nav-item"><a href="/blog/react/" class="nav-link">
+  react
+</a></div><div class="nav-item"><a href="/blog/typescript/" class="nav-link">
+  typescript
+</a></div><div class="nav-item"><a href="/blog/advance/prettier.html" class="nav-link">
+  前端进阶
+</a></div><div class="nav-item"><a href="/blog/automate/" class="nav-link">
+  前端自动化部署
+</a></div><div class="nav-item"><a href="/blog/git/" class="nav-link">
+  Git
+</a></div><div class="nav-item"><a href="/blog/other/css.html" class="nav-link">
+  常见问题
+</a></div> <a href="https://github.com/liaofujia/blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/interview/" class="nav-link">
+  前端八股文
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端书籍" class="dropdown-title"><span class="title">前端书籍</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端书籍" class="mobile-dropdown-title"><span class="title">前端书籍</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/books/" class="nav-link">
+  JavaScript设计模式
+</a></li></ul></div></div><div class="nav-item"><a href="/blog/react/" class="nav-link">
+  react
+</a></div><div class="nav-item"><a href="/blog/typescript/" class="nav-link">
+  typescript
+</a></div><div class="nav-item"><a href="/blog/advance/prettier.html" class="nav-link">
+  前端进阶
+</a></div><div class="nav-item"><a href="/blog/automate/" class="nav-link">
+  前端自动化部署
+</a></div><div class="nav-item"><a href="/blog/git/" class="nav-link">
+  Git
+</a></div><div class="nav-item"><a href="/blog/other/css.html" class="nav-link">
+  常见问题
+</a></div> <a href="https://github.com/liaofujia/blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><a href="/blog/advance/prettier.html" class="sidebar-link">Perttier配置</a></li><li><a href="/blog/advance/" aria-current="page" class="active sidebar-link">ESLint配置</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/advance/#安装eslint及依赖包" class="sidebar-link">安装eslint及依赖包</a></li><li class="sidebar-sub-header"><a href="/blog/advance/#配置-eslintrc-js" class="sidebar-link">配置.eslintrc.js</a></li><li class="sidebar-sub-header"><a href="/blog/advance/#配置-prettierrc-js" class="sidebar-link">配置.prettierrc.js</a></li><li class="sidebar-sub-header"><a href="/blog/advance/#添加脚本" class="sidebar-link">添加脚本</a></li><li class="sidebar-sub-header"><a href="/blog/advance/#mrm" class="sidebar-link">mrm</a></li><li class="sidebar-sub-header"><a href="/blog/advance/#lint-staged" class="sidebar-link">lint-staged</a></li></ul></li><li><a href="/blog/advance/stylelint.html" class="sidebar-link">styleLint配置</a></li><li><a href="/blog/advance/webpack.html" class="sidebar-link">webpack知识点</a></li><li><a href="/blog/advance/umi.html" class="sidebar-link">首屏加载时间优化</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="eslint配置"><a href="#eslint配置" class="header-anchor">#</a> ESLint配置</h1> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>前置条件：vscode安装并开启<code>eslint</code>插件</p></div> <h2 id="安装eslint及依赖包"><a href="#安装eslint及依赖包" class="header-anchor">#</a> 安装eslint及依赖包</h2> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token punctuation">{</span>
+  <span class="token string">&quot;devDependencies&quot;</span><span class="token builtin class-name">:</span> <span class="token punctuation">{</span>
+    <span class="token string">&quot;@typescript-eslint/eslint-plugin&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;^5.6.0&quot;</span>,
+    <span class="token string">&quot;@typescript-eslint/parser&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;^5.8.1&quot;</span>,
+    <span class="token string">&quot;eslint&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;^8.3.0&quot;</span>,
+    <span class="token string">&quot;eslint-config-airbnb&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;^19.0.2&quot;</span>, // Airbnb的标准（配置文件中的extends里没有用Airbnb的话可以不装）
+    <span class="token string">&quot;eslint-plugin-import&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;^2.25.3&quot;</span>, // Airbnb标准必需
+    <span class="token string">&quot;eslint-plugin-jsx-a11y&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;^6.5.1&quot;</span>, // Airbnb标准必需，用来校验import的，比如不能添加后缀 .js
+    <span class="token string">&quot;eslint-config-prettier&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;^8.3.0&quot;</span>,
+    <span class="token string">&quot;eslint-import-resolver-typescript&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;^2.5.0&quot;</span>,
+    <span class="token string">&quot;eslint-plugin-react&quot;</span><span class="token builtin class-name">:</span> <span class="token string">&quot;^7.28.0&quot;</span>, // 支持react语法
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="配置-eslintrc-js"><a href="#配置-eslintrc-js" class="header-anchor">#</a> 配置.eslintrc.js</h2> <p>rules规则说明：</p> <ul><li>&quot;off&quot; 或 0：关闭规则</li> <li>&quot;warn&quot; 或 1：开启规则，使用警告级别的提示（程序不会奔溃）</li> <li>&quot;error&quot; 或 2：开启规则，使用错误级别的提示（触发时，程序会奔溃）</li></ul> <div class="language-js extra-class"><pre class="language-js"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 指定脚本的运行环境，一个环境定义了一组预定义的全局变量</span>
+    <span class="token literal-property property">env</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token string-property property">&quot;browser&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">//浏览器环境中的全局变量</span>
+        <span class="token string-property property">&quot;es6&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">//启用除了modules以外的所有ES6特性（该选项会自动设置 ecmaVersion 解析器选项为 6）</span>
+        <span class="token string-property property">&quot;node&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token comment">//Node.js 全局变量和 Node.js 作用域</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token keyword">extends</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'airbnb'</span><span class="token punctuation">,</span> <span class="token string">'prettier'</span><span class="token punctuation">,</span> <span class="token string">'plugin:@typescript-eslint/recommended'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token comment">// 设置全局变量</span>
+    <span class="token literal-property property">globals</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token string-property property">&quot;Atomics&quot;</span><span class="token operator">:</span> <span class="token string">&quot;readonly&quot;</span><span class="token punctuation">,</span>
+        <span class="token string-property property">&quot;SharedArrayBuffer&quot;</span><span class="token operator">:</span> <span class="token string">&quot;readonly&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">// 指定解析器</span>
+    <span class="token literal-property property">parser</span><span class="token operator">:</span> <span class="token string">'@typescript-eslint/parser'</span><span class="token punctuation">,</span> <span class="token comment">// 定义ESLint的解析器</span>
+    <span class="token comment">// 指定解析器选项</span>
+    <span class="token literal-property property">parserOptions</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token comment">// ts 版本的提示信息</span>
+        <span class="token literal-property property">warnOnUnsupportedTypeScriptVersion</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">// 第三方插件</span>
+    <span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'@typescript-eslint'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">rules</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token string-property property">&quot;quotes&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">&quot;single&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment">//单引号</span>
+        <span class="token string-property property">&quot;no-console&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token comment">//不禁用console</span>
+        <span class="token string-property property">&quot;no-debugger&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token comment">//禁用debugger</span>
+        <span class="token string-property property">&quot;no-var&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token comment">//对var警告</span>
+        <span class="token string-property property">&quot;semi&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token comment">//不强制使用分号</span>
+        <span class="token string-property property">&quot;no-irregular-whitespace&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token comment">//不规则的空白不允许</span>
+        <span class="token string-property property">&quot;no-trailing-spaces&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token comment">//一行结束后面有空格就发出警告</span>
+        <span class="token string-property property">&quot;eol-last&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token comment">//文件以单一的换行符结束</span>
+        <span class="token string-property property">&quot;no-unused-vars&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> <span class="token string-property property">&quot;vars&quot;</span><span class="token operator">:</span> <span class="token string">&quot;all&quot;</span><span class="token punctuation">,</span> <span class="token string-property property">&quot;args&quot;</span><span class="token operator">:</span> <span class="token string">&quot;after-used&quot;</span> <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment">//不能有声明后未被使用的变量或参数</span>
+        <span class="token string-property property">&quot;no-underscore-dangle&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token comment">//标识符不能以_开头或结尾</span>
+        <span class="token string-property property">&quot;no-alert&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token comment">//禁止使用alert confirm prompt</span>
+        <span class="token string-property property">&quot;no-lone-blocks&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token comment">//禁止不必要的嵌套块</span>
+        <span class="token string-property property">&quot;no-class-assign&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token comment">//禁止给类赋值</span>
+        <span class="token string-property property">&quot;no-cond-assign&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token comment">//禁止在条件表达式中使用赋值语句</span>
+        <span class="token string-property property">&quot;no-const-assign&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token comment">//禁止修改const声明的变量</span>
+        <span class="token string-property property">&quot;no-delete-var&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token comment">//不能对var声明的变量使用delete操作符</span>
+        <span class="token string-property property">&quot;no-dupe-keys&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token comment">//在创建对象字面量时不允许键重复</span>
+        <span class="token string-property property">&quot;no-duplicate-case&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token comment">//switch中的case标签不能重复</span>
+        <span class="token string-property property">&quot;no-dupe-args&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token comment">//函数参数不能重复</span>
+        <span class="token string-property property">&quot;no-empty&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token comment">//块语句中的内容不能为空</span>
+        <span class="token string-property property">&quot;no-func-assign&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token comment">//禁止重复的函数声明</span>
+        <span class="token string-property property">&quot;no-invalid-this&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token comment">//禁止无效的this，只能用在构造器，类，对象字面量</span>
+        <span class="token string-property property">&quot;no-redeclare&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token comment">//禁止重复声明变量</span>
+        <span class="token string-property property">&quot;no-spaced-func&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token comment">//函数调用时 函数名与()之间不能有空格</span>
+        <span class="token string-property property">&quot;no-this-before-super&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token comment">//在调用super()之前不能使用this或super</span>
+        <span class="token string-property property">&quot;no-undef&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token comment">//不能有未定义的变量</span>
+        <span class="token string-property property">&quot;no-use-before-define&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token comment">//未定义前不能使用</span>
+        <span class="token string-property property">&quot;camelcase&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token comment">//强制驼峰法命名</span>
+        <span class="token string-property property">&quot;jsx-quotes&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">&quot;prefer-double&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment">//强制在JSX属性（jsx-quotes）中一致使用双引号</span>
+        <span class="token string-property property">&quot;react/display-name&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token comment">//防止在React组件定义中丢失displayName</span>
+        <span class="token string-property property">&quot;react/forbid-prop-types&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> <span class="token string-property property">&quot;forbid&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;any&quot;</span><span class="token punctuation">]</span> <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment">//禁止某些propTypes</span>
+        <span class="token string-property property">&quot;react/jsx-boolean-value&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token comment">//在JSX中强制布尔属性符号</span>
+        <span class="token string-property property">&quot;react/jsx-closing-bracket-location&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token comment">//在JSX中验证右括号位置</span>
+        <span class="token string-property property">&quot;react/jsx-curly-spacing&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> <span class="token string-property property">&quot;when&quot;</span><span class="token operator">:</span> <span class="token string">&quot;never&quot;</span><span class="token punctuation">,</span> <span class="token string-property property">&quot;children&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment">//在JSX属性和表达式中加强或禁止大括号内的空格。</span>
+        <span class="token string-property property">&quot;react/jsx-indent-props&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment">//验证JSX中的props缩进</span>
+        <span class="token string-property property">&quot;react/jsx-key&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token comment">//在数组或迭代器中验证JSX具有key属性</span>
+        <span class="token string-property property">&quot;react/jsx-max-props-per-line&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> <span class="token string-property property">&quot;maximum&quot;</span><span class="token operator">:</span> <span class="token number">1</span> <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token comment">// 限制JSX中单行上的props的最大数量</span>
+        <span class="token string-property property">&quot;react/jsx-no-bind&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token comment">//JSX中不允许使用箭头函数和bind</span>
+        <span class="token string-property property">&quot;react/jsx-no-duplicate-props&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token comment">//防止在JSX中重复的props</span>
+        <span class="token string-property property">&quot;react/jsx-no-literals&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token comment">//防止使用未包装的JSX字符串</span>
+        <span class="token string-property property">&quot;react/jsx-no-undef&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token comment">//在JSX中禁止未声明的变量</span>
+        <span class="token string-property property">&quot;react/jsx-pascal-case&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token comment">//为用户定义的JSX组件强制使用PascalCase</span>
+        <span class="token string-property property">&quot;react/jsx-sort-props&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token comment">//强化props按字母排序</span>
+        <span class="token string-property property">&quot;react/jsx-uses-react&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token comment">//防止反应被错误地标记为未使用</span>
+        <span class="token string-property property">&quot;react/jsx-uses-vars&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token comment">//防止在JSX中使用的变量被错误地标记为未使用</span>
+        <span class="token string-property property">&quot;react/no-danger&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token comment">//防止使用危险的JSX属性</span>
+        <span class="token string-property property">&quot;react/no-did-mount-set-state&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token comment">//防止在componentDidMount中使用setState</span>
+        <span class="token string-property property">&quot;react/no-did-update-set-state&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token comment">//防止在componentDidUpdate中使用setState</span>
+        <span class="token string-property property">&quot;react/no-direct-mutation-state&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token comment">//防止this.state的直接变异</span>
+        <span class="token string-property property">&quot;react/no-multi-comp&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token comment">//防止每个文件有多个组件定义</span>
+        <span class="token string-property property">&quot;react/no-set-state&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token comment">//防止使用setState</span>
+        <span class="token string-property property">&quot;react/no-unknown-property&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token comment">//防止使用未知的DOM属性</span>
+        <span class="token string-property property">&quot;react/prefer-es6-class&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token comment">//为React组件强制执行ES5或ES6类</span>
+        <span class="token string-property property">&quot;react/prop-types&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token comment">//防止在React组件定义中丢失props验证</span>
+        <span class="token string-property property">&quot;react/react-in-jsx-scope&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token comment">//使用JSX时防止丢失React</span>
+        <span class="token string-property property">&quot;react/self-closing-comp&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token comment">//防止没有children的组件的额外结束标签</span>
+        <span class="token string-property property">&quot;react/sort-comp&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token comment">//强制组件方法顺序</span>
+        <span class="token string-property property">&quot;no-extra-boolean-cast&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token comment">//禁止不必要的bool转换</span>
+        <span class="token string-property property">&quot;react/no-array-index-key&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token comment">//防止在数组中遍历中使用数组key做索引</span>
+        <span class="token string-property property">&quot;react/no-deprecated&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token comment">//不使用弃用的方法</span>
+        <span class="token string-property property">&quot;react/jsx-equals-spacing&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token comment">//在JSX属性中强制或禁止等号周围的空格</span>
+        <span class="token string-property property">&quot;no-unreachable&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token comment">//不能有无法执行的代码</span>
+        <span class="token string-property property">&quot;comma-dangle&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token comment">//对象字面量项尾不能有逗号</span>
+        <span class="token string-property property">&quot;no-mixed-spaces-and-tabs&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token comment">//禁止混用tab和空格</span>
+        <span class="token string-property property">&quot;prefer-arrow-callback&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token comment">//比较喜欢箭头回调</span>
+        <span class="token string-property property">&quot;arrow-parens&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token comment">//箭头函数用小括号括起来</span>
+        <span class="token string-property property">&quot;arrow-spacing&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token comment">//=&gt;的前/后括号</span>
+        <span class="token comment">/* ts */</span>
+        <span class="token string-property property">'no-unused-expressions'</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token string">'warn'</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span> <span class="token literal-property property">allowShortCircuit</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span> <span class="token literal-property property">allowTernary</span><span class="token operator">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token comment">// 允许 短路运算和三元运算 其他warning</span>
+        <span class="token comment">/* js */</span>
+        <span class="token string-property property">'max-len'</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'error'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> <span class="token literal-property property">code</span><span class="token operator">:</span> <span class="token number">150</span> <span class="token punctuation">}</span><span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token comment">// 最大行字符数</span>
+        <span class="token literal-property property">semi</span><span class="token operator">:</span> <span class="token string">'off'</span><span class="token punctuation">,</span><span class="token comment">// 允许 行尾无分号</span>
+        <span class="token comment">/* react */</span>
+        <span class="token string-property property">'react-hooks/exhaustive-deps'</span><span class="token operator">:</span> <span class="token string">'off'</span><span class="token punctuation">,</span><span class="token comment">// 允许 react-hooks 依赖不全</span>
+        <span class="token string-property property">'react/no-array-index-key'</span><span class="token operator">:</span> <span class="token string">'off'</span><span class="token punctuation">,</span><span class="token comment">// 允许 用 index 做key</span>
+        <span class="token string-property property">'react/function-component-definition'</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token number">2</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span> <span class="token literal-property property">namedComponents</span><span class="token operator">:</span> <span class="token string">'arrow-function'</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">]</span><span class="token punctuation">,</span><span class="token comment">// 默认 用箭头函数定义函数组件</span>
+        <span class="token string-property property">'react/jsx-filename-extension'</span><span class="token operator">:</span> <span class="token string">'off'</span><span class="token punctuation">,</span><span class="token comment">// 允许 tsx里面不带类型定义</span>
+        <span class="token string-property property">'react/require-default-props'</span><span class="token operator">:</span> <span class="token string">'off'</span><span class="token punctuation">,</span><span class="token comment">// 允许 没有默认值</span>
+        <span class="token string-property property">'react/react-in-jsx-scope'</span><span class="token operator">:</span> <span class="token string">'off'</span><span class="token punctuation">,</span><span class="token comment">// 允许 React不带import React </span>
+        <span class="token comment">/* import */</span>
+        <span class="token string-property property">'import/extensions'</span><span class="token operator">:</span> <span class="token string">'off'</span><span class="token punctuation">,</span><span class="token comment">// 允许 不带扩展名</span>
+        <span class="token string-property property">'import/prefer-default-export'</span><span class="token operator">:</span> <span class="token string">'off'</span><span class="token punctuation">,</span><span class="token comment">// 允许 不用export default</span>
+        <span class="token string-property property">'import/resolver'</span><span class="token operator">:</span> <span class="token string">'off'</span><span class="token punctuation">,</span><span class="token comment">// 关闭 eslint 模块解析（已经有ts做了依赖解析）</span>
+        <span class="token string-property property">'jsx-a11y/mouse-events-have-key-events'</span><span class="token operator">:</span> <span class="token string">'off'</span><span class="token punctuation">,</span>
+        <span class="token string-property property">'jsx-a11y/no-noninteractive-element-interactions'</span><span class="token operator">:</span> <span class="token string">'off'</span><span class="token punctuation">,</span>
+        <span class="token string-property property">'jsx-a11y/click-events-have-key-events'</span><span class="token operator">:</span> <span class="token string">'off'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">// 依赖解析用 ts</span>
+    <span class="token literal-property property">settings</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token string-property property">'import/parser'</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token string-property property">'@typescript-eslint/parser'</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'.ts'</span><span class="token punctuation">,</span> <span class="token string">'.tsx'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token string-property property">'import/resolver'</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token literal-property property">typescript</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+</code></pre></div><h2 id="配置-prettierrc-js"><a href="#配置-prettierrc-js" class="header-anchor">#</a> 配置.prettierrc.js</h2> <p>在项目的根目录下添加 <code>.prettierrc</code> 或 <code>.prettierrc.js</code> 或 <code>.prettier.config.js</code> 和 <code>.prettierrc.toml</code> 文件。</p> <p>JSON:</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;trailingComma&quot;</span><span class="token operator">:</span> <span class="token string">&quot;es5&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;tabWidth&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;semi&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;singleQuote&quot;</span><span class="token operator">:</span> <span class="token boolean">true</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>JS:</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// prettier.config.js or .prettierrc.js</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">trailingComma</span><span class="token operator">:</span> <span class="token string">&quot;es5&quot;</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">tabWidth</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">semi</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">singleQuote</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>YAML:</p> <div class="language-yaml extra-class"><pre class="language-yaml"><code><span class="token comment"># .prettierrc or .prettierrc.yaml</span>
+<span class="token key atrule">trailingComma</span><span class="token punctuation">:</span> <span class="token string">&quot;es5&quot;</span>
+<span class="token key atrule">tabWidth</span><span class="token punctuation">:</span> <span class="token number">2</span>
+<span class="token key atrule">semi</span><span class="token punctuation">:</span> <span class="token boolean important">false</span>
+<span class="token key atrule">singleQuote</span><span class="token punctuation">:</span> <span class="token boolean important">true</span>
+</code></pre></div><p>TOML:</p> <div class="language-toml extra-class"><pre class="language-toml"><code><span class="token comment"># .prettierrc.toml</span>
+<span class="token key property">trailingComma</span> <span class="token punctuation">=</span> <span class="token string">&quot;es5&quot;</span>
+<span class="token key property">tabWidth</span> <span class="token punctuation">=</span> <span class="token number">2</span>
+<span class="token key property">semi</span> <span class="token punctuation">=</span> <span class="token boolean">false</span>
+<span class="token key property">singleQuote</span> <span class="token punctuation">=</span> <span class="token boolean">true</span>
+</code></pre></div><h2 id="添加脚本"><a href="#添加脚本" class="header-anchor">#</a> 添加脚本</h2> <div class="language-json extra-class"><pre class="language-json"><code><span class="token comment">// package.json</span>
+<span class="token property">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;lint&quot;</span><span class="token operator">:</span> <span class="token string">&quot;eslint src/**/*.{js,jsx,ts,tsx}  --no-error-on-unmatched-pattern&quot;</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="mrm"><a href="#mrm" class="header-anchor">#</a> mrm</h2> <p><code>mrm</code>是一个自动化工具。</p> <p>它将根据package.json依赖项中的代码质量工具来安装和配置husky和lint-staged，因此请确保在此之前安装（npm install -D）并配置所有代码质量工具，如<code>Prettier</code>和<code>ESlint</code>。</p> <h2 id="lint-staged"><a href="#lint-staged" class="header-anchor">#</a> lint-staged</h2> <blockquote><p>lint-staged 是一个在git暂存文件上运行linters的工具，当然如果你觉得每次修改一个文件就给所有文件执行一次lint检查不恶心的话，这个工具对你来说就没有什么意义了，请直接关闭即可。</p></blockquote> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">npm</span> i mrm -D
+npx mrm lint-staged
+</code></pre></div><p>运行完上述命令你会发现：</p> <ul><li><code>package.json</code>里多了两个开发依赖（<code>husky</code>和<code>lint-staged</code>）和一个<code>prepare</code>脚本：</li></ul> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;prepare&quot;</span><span class="token operator">:</span> <span class="token string">&quot;husky install&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;devDependencies&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;husky&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^7.0.4&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;lint-staged&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^12.1.7&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;mrm&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^3.0.10&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;prettier&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^2.5.1&quot;</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;lint-staged&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;*.js&quot;</span><span class="token operator">:</span> <span class="token string">&quot;eslint --cache --fix&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;*.{js,css,md}&quot;</span><span class="token operator">:</span> <span class="token string">&quot;prettier --write&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><ul><li>根目录多了一个<code>.husky</code>的文件</li></ul> <p>可以根据项目的需要自行修改，比如可以改为：</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token comment">// 所有目录下包含后缀的都会开启ESLint检测</span>
+<span class="token property">&quot;lint-staged&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;**/*.less&quot;</span><span class="token operator">:</span> <span class="token string">&quot;stylelint --syntax less&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;**/*.{js,jsx,ts,tsx}&quot;</span><span class="token operator">:</span> <span class="token string">&quot;npm run lint-staged:js&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;**/*.{js,jsx,tsx,ts,less,md,json}&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;prettier --write&quot;</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// 指定下包含后缀的都会开启ESLint检测</span>
+<span class="token comment">// 这里其实是不需要跑npm run lint的，因为如果这样在commit时会全量检测所有src下的文件，然而其实我们只需要检测修改的文件即可。</span>
+<span class="token property">&quot;lint-staged&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;src/**/*.{js,jsx,ts,tsx}&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token string">&quot;npm run lint&quot;</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+
+    <span class="token property">&quot;src/**/*.{js,jsx,ts,tsx}&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span>
+      <span class="token string">&quot;eslint&quot;</span>
+    <span class="token punctuation">]</span>
+    
+<span class="token punctuation">}</span>
+
+</code></pre></div><p>完成安装和配置后，当开发者完成代码，执行<code>git commit -m 'xxx'</code>时，会自动开启ESlint检查。</p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最后更新时间:</span> <span class="time">5/21/2022, 4:34:14 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/advance/prettier.html" class="prev">
+        Perttier配置
+      </a></span> <span class="next"><a href="/blog/advance/stylelint.html">
+        styleLint配置
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/blog/assets/js/app.3faf3b5a.js" defer></script><script src="/blog/assets/js/2.f21ef004.js" defer></script><script src="/blog/assets/js/8.bc56b455.js" defer></script>
+  </body>
+</html>

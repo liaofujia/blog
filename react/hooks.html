@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>React hooks | 冲破束缚的天蝎座</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="web.png">
+    <meta name="description" content="一名专注前端开发的废物">
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.e92431cb.css" as="style"><link rel="preload" href="/blog/assets/js/app.3faf3b5a.js" as="script"><link rel="preload" href="/blog/assets/js/2.f21ef004.js" as="script"><link rel="preload" href="/blog/assets/js/40.4c5f272f.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.6c00c5ec.js"><link rel="prefetch" href="/blog/assets/js/11.46339c4b.js"><link rel="prefetch" href="/blog/assets/js/12.41d24a22.js"><link rel="prefetch" href="/blog/assets/js/13.c887e290.js"><link rel="prefetch" href="/blog/assets/js/14.a721a174.js"><link rel="prefetch" href="/blog/assets/js/15.0e792442.js"><link rel="prefetch" href="/blog/assets/js/16.e6f103b8.js"><link rel="prefetch" href="/blog/assets/js/17.32a8ae99.js"><link rel="prefetch" href="/blog/assets/js/18.bc6047c5.js"><link rel="prefetch" href="/blog/assets/js/19.bd558192.js"><link rel="prefetch" href="/blog/assets/js/20.30fcf379.js"><link rel="prefetch" href="/blog/assets/js/21.57070a5c.js"><link rel="prefetch" href="/blog/assets/js/22.d1c6053d.js"><link rel="prefetch" href="/blog/assets/js/23.7f8ffe88.js"><link rel="prefetch" href="/blog/assets/js/24.bfef35ca.js"><link rel="prefetch" href="/blog/assets/js/25.4aaafe0f.js"><link rel="prefetch" href="/blog/assets/js/26.5eefef23.js"><link rel="prefetch" href="/blog/assets/js/27.780fe627.js"><link rel="prefetch" href="/blog/assets/js/28.568829f3.js"><link rel="prefetch" href="/blog/assets/js/29.d3b22c8c.js"><link rel="prefetch" href="/blog/assets/js/3.eecce71b.js"><link rel="prefetch" href="/blog/assets/js/30.3a6e50ec.js"><link rel="prefetch" href="/blog/assets/js/31.50133f3c.js"><link rel="prefetch" href="/blog/assets/js/32.f89fd996.js"><link rel="prefetch" href="/blog/assets/js/33.de2fe35b.js"><link rel="prefetch" href="/blog/assets/js/34.254ed816.js"><link rel="prefetch" href="/blog/assets/js/35.a881d1bd.js"><link rel="prefetch" href="/blog/assets/js/36.8414a4c4.js"><link rel="prefetch" href="/blog/assets/js/37.d8d2776d.js"><link rel="prefetch" href="/blog/assets/js/38.6b34add3.js"><link rel="prefetch" href="/blog/assets/js/39.bbd624b6.js"><link rel="prefetch" href="/blog/assets/js/4.228b9cee.js"><link rel="prefetch" href="/blog/assets/js/41.76207b1d.js"><link rel="prefetch" href="/blog/assets/js/42.02fd675c.js"><link rel="prefetch" href="/blog/assets/js/43.d48b41ae.js"><link rel="prefetch" href="/blog/assets/js/44.be0279d9.js"><link rel="prefetch" href="/blog/assets/js/45.39ce449d.js"><link rel="prefetch" href="/blog/assets/js/46.9bfcf467.js"><link rel="prefetch" href="/blog/assets/js/5.9d94d376.js"><link rel="prefetch" href="/blog/assets/js/6.c6045601.js"><link rel="prefetch" href="/blog/assets/js/7.8e3dff59.js"><link rel="prefetch" href="/blog/assets/js/8.bc56b455.js"><link rel="prefetch" href="/blog/assets/js/9.9654334a.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.e92431cb.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><!----> <span class="site-name">冲破束缚的天蝎座</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/interview/" class="nav-link">
+  前端八股文
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端书籍" class="dropdown-title"><span class="title">前端书籍</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端书籍" class="mobile-dropdown-title"><span class="title">前端书籍</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/books/" class="nav-link">
+  JavaScript设计模式
+</a></li></ul></div></div><div class="nav-item"><a href="/blog/react/" class="nav-link router-link-active">
+  react
+</a></div><div class="nav-item"><a href="/blog/typescript/" class="nav-link">
+  typescript
+</a></div><div class="nav-item"><a href="/blog/advance/prettier.html" class="nav-link">
+  前端进阶
+</a></div><div class="nav-item"><a href="/blog/automate/" class="nav-link">
+  前端自动化部署
+</a></div><div class="nav-item"><a href="/blog/git/" class="nav-link">
+  Git
+</a></div><div class="nav-item"><a href="/blog/other/css.html" class="nav-link">
+  常见问题
+</a></div> <a href="https://github.com/liaofujia/blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/interview/" class="nav-link">
+  前端八股文
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端书籍" class="dropdown-title"><span class="title">前端书籍</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端书籍" class="mobile-dropdown-title"><span class="title">前端书籍</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/books/" class="nav-link">
+  JavaScript设计模式
+</a></li></ul></div></div><div class="nav-item"><a href="/blog/react/" class="nav-link router-link-active">
+  react
+</a></div><div class="nav-item"><a href="/blog/typescript/" class="nav-link">
+  typescript
+</a></div><div class="nav-item"><a href="/blog/advance/prettier.html" class="nav-link">
+  前端进阶
+</a></div><div class="nav-item"><a href="/blog/automate/" class="nav-link">
+  前端自动化部署
+</a></div><div class="nav-item"><a href="/blog/git/" class="nav-link">
+  Git
+</a></div><div class="nav-item"><a href="/blog/other/css.html" class="nav-link">
+  常见问题
+</a></div> <a href="https://github.com/liaofujia/blog" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><a href="/blog/react/" aria-current="page" class="sidebar-link">React 基础</a></li><li><a href="/blog/react/hooks.html" aria-current="page" class="active sidebar-link">React hooks</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/react/hooks.html#usecontext" class="sidebar-link">useContext</a></li><li class="sidebar-sub-header"><a href="/blog/react/hooks.html#useref" class="sidebar-link">useRef</a></li><li class="sidebar-sub-header"><a href="/blog/react/hooks.html#error-boundaries" class="sidebar-link">Error boundaries</a></li></ul></li><li><a href="/blog/react/advance.html" class="sidebar-link">React 进阶</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="react-hooks"><a href="#react-hooks" class="header-anchor">#</a> React hooks</h1> <h2 id="usecontext"><a href="#usecontext" class="header-anchor">#</a> useContext</h2> <p>一、React.createContext</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> MyContext <span class="token operator">=</span> React<span class="token punctuation">.</span><span class="token function">createContext</span><span class="token punctuation">(</span>defaultValue<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>创建一个 <code>Context</code> 对象。当 React 渲染一个订阅了这个 Context 对象的组件，这个组件会从组件树中离自身最近的那个匹配的 <code>Provider</code> 中读取到当前的 context 值。</p> <p>只有当组件所处的树中没有匹配到 Provider 时，其 defaultValue 参数才会生效。此默认值有助于在不使用 Provider 包装组件的情况下对组件进行测试。注意：将 undefined 传递给 Provider 的 value 时，消费组件的 defaultValue 不会生效。</p> <p>二、使用 useContext 获取上下文</p> <p>接收一个 context 对象（React.createContext 的返回值）并返回该 context 的当前值。当前的 context 值由上层组件中距离当前组件最近的 &lt;MyContext.Provider&gt; 的 value prop 决定。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> value <span class="token operator">=</span> <span class="token function">useContext</span><span class="token punctuation">(</span>MyContext<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>如果父子组件不在同一个目录中，如何共享 Mycontext这个 context实例呢？</p> <p>一般这种情况下，我会通过 Context Manager 统一管理上下文的实例，然后通过 <code>export</code> 将实例导出，在子组件中在将实例 <code>import</code> 进来。</p> <p>三、createContext 和 useContext 结合使用实现方法共享</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// a.jsx</span>
+<span class="token keyword">const</span> themes <span class="token operator">=</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">light</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">foreground</span><span class="token operator">:</span> <span class="token string">&quot;#000000&quot;</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">background</span><span class="token operator">:</span> <span class="token string">&quot;#eeeeee&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token literal-property property">dark</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">foreground</span><span class="token operator">:</span> <span class="token string">&quot;#ffffff&quot;</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">background</span><span class="token operator">:</span> <span class="token string">&quot;#222222&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">const</span> ThemeContext <span class="token operator">=</span> React<span class="token punctuation">.</span><span class="token function">createContext</span><span class="token punctuation">(</span>themes<span class="token punctuation">.</span>light<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> <span class="token function-variable function">App</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>ThemeContext<span class="token punctuation">.</span>Provider value<span class="token operator">=</span><span class="token punctuation">{</span>themes<span class="token punctuation">.</span>dark<span class="token punctuation">}</span><span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>Toolbar <span class="token operator">/</span><span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>ThemeContext<span class="token punctuation">.</span>Provider<span class="token operator">&gt;</span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// b.jsx</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> ThemeContext <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'./a.jsx'</span>
+<span class="token keyword">const</span> <span class="token function-variable function">Toolbar</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> theme <span class="token operator">=</span> <span class="token function">useContext</span><span class="token punctuation">(</span>ThemeContext<span class="token punctuation">)</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>div style<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span> <span class="token literal-property property">background</span><span class="token operator">:</span> theme<span class="token punctuation">.</span>background<span class="token punctuation">,</span> <span class="token literal-property property">color</span><span class="token operator">:</span> theme<span class="token punctuation">.</span>foreground <span class="token punctuation">}</span><span class="token punctuation">}</span><span class="token operator">&gt;</span>
+      <span class="token constant">I</span> am styled by theme context<span class="token operator">!</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="useref"><a href="#useref" class="header-anchor">#</a> useRef</h2> <p>首先， 我们要实现一个需求 -- 点击 button 的时候 input 设置焦点。</p> <h3 id="createref-api"><a href="#createref-api" class="header-anchor">#</a> createRef API</h3> <div class="language-tsx extra-class"><pre class="language-tsx"><code><span class="token keyword">const</span> <span class="token function-variable function">FocusInput</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> inputElement <span class="token operator">=</span> <span class="token function">createRef</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">const</span> <span class="token function-variable function">handleFocusInput</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    inputElement<span class="token punctuation">.</span>current<span class="token punctuation">.</span><span class="token function">focus</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>text<span class="token punctuation">&quot;</span></span> <span class="token attr-name">ref</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>inputElement<span class="token punctuation">}</span></span> <span class="token punctuation">/&gt;</span></span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">onClick</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>handleFocusInput<span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">Focus Input</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>同样的，我们可以使用 useRef 来实现完全相同的结果。</p> <h3 id="useref-2"><a href="#useref-2" class="header-anchor">#</a> useRef</h3> <div class="language-tsx extra-class"><pre class="language-tsx"><code><span class="token keyword">const</span> <span class="token function-variable function">FocusInputHook</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> inputElement <span class="token operator">=</span> <span class="token function">useRef</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">const</span> <span class="token function-variable function">handleFocusInput</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    inputElement<span class="token punctuation">.</span>current<span class="token punctuation">.</span><span class="token function">focus</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>text<span class="token punctuation">&quot;</span></span> <span class="token attr-name">ref</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>inputElement<span class="token punctuation">}</span></span> <span class="token punctuation">/&gt;</span></span><span class="token plain-text">
+      </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">onClick</span><span class="token script language-javascript"><span class="token script-punctuation punctuation">=</span><span class="token punctuation">{</span>handleFocusInput<span class="token punctuation">}</span></span><span class="token punctuation">&gt;</span></span><span class="token plain-text">Focus Input Hook</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span><span class="token plain-text">
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="createref-与-useref-的区别"><a href="#createref-与-useref-的区别" class="header-anchor">#</a> createRef 与 useRef 的区别</h3> <ul><li><p>useRef 在 React Hooks 中的作用， 正如官网说的，它像一个变量， 类似于 this，它就像一个盒子，你可以存放任何东西。</p></li> <li><p>createRef 每次渲染都会返回一个新的引用，而 useRef 每次都会返回相同的引用。</p></li></ul> <h2 id="error-boundaries"><a href="#error-boundaries" class="header-anchor">#</a> Error boundaries</h2> <blockquote><p>Error boundaries 是 React 组件，它会在其子组件树中的任何位置捕获 JavaScript 错误，并记录这些错误。</p></blockquote> <p>如果 class 组件定义了生命周期方法 <code>static getDerivedStateFromError()</code> 或 <code>componentDidCatch()</code> 中的任何一个（或两者），它就成为了 <code>Error boundaries</code>。通过生命周期更新 state 可让组件捕获树中未处理的 JavaScript 错误并展示降级 UI。</p> <div class="custom-block tip"><p class="custom-block-title">注意</p> <p>Error boundaries 仅捕获组件树中以下组件中的错误。但它本身的错误无法捕获。</p></div> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">class</span> <span class="token class-name">ErrorBoundary</span> <span class="token keyword">extends</span> <span class="token class-name">Component</span> <span class="token punctuation">{</span>
+  state <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">error</span><span class="token operator">:</span> <span class="token keyword">null</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">static</span> <span class="token function">getDerivedStateFromError</span><span class="token punctuation">(</span><span class="token parameter">error</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 更新 state，下次渲染可以展示错误相关的 UI</span>
+    <span class="token keyword">return</span> <span class="token punctuation">{</span> <span class="token literal-property property">error</span><span class="token operator">:</span> error <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">componentDidCatch</span><span class="token punctuation">(</span><span class="token parameter">error<span class="token punctuation">,</span> info</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 错误上报</span>
+    <span class="token function">logErrorToMyService</span><span class="token punctuation">(</span>error<span class="token punctuation">,</span> info<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 渲染出错时的 UI</span>
+      <span class="token keyword">return</span> <span class="token operator">&lt;</span>h1<span class="token operator">&gt;</span>Something went wrong<span class="token punctuation">.</span><span class="token operator">&lt;</span><span class="token operator">/</span>h1<span class="token operator">&gt;</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>props<span class="token punctuation">.</span>children<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><ul><li><code>static getDerivedStateFromError</code>: 在出错后有机会修改 state 触发最后一次错误 fallback 的渲染。</li> <li><code>componentDidCatch</code>: 用于出错时副作用代码，比如错误上报等。</li></ul></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最后更新时间:</span> <span class="time">5/21/2022, 4:34:14 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/blog/react/" class="prev router-link-active">
+        React 基础
+      </a></span> <span class="next"><a href="/blog/react/advance.html">
+        React 进阶
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/blog/assets/js/app.3faf3b5a.js" defer></script><script src="/blog/assets/js/2.f21ef004.js" defer></script><script src="/blog/assets/js/40.4c5f272f.js" defer></script>
+  </body>
+</html>
